@@ -2,6 +2,8 @@
 чисел больше 0 ввёл пользователь.
 0, 7, 8, -2, -2 -> 2
 1, -7, 567, 89, 223-> 3 */
+
+//Проверка размерности массива на валидность ввода
 int GetNumber(string message)
 {
     bool isCorrect = false;
@@ -16,6 +18,7 @@ int GetNumber(string message)
     return result;
 }
 
+////Проверка элементов массива на валидность ввода
 int CheckArrayOnNumber()
 {
     int result;
@@ -26,6 +29,7 @@ int CheckArrayOnNumber()
     }
 }
 
+//Ввод массива
 int[] ArrayInput(int dimension)
 {
     int[] array = new int[dimension];
@@ -38,6 +42,7 @@ int[] ArrayInput(int dimension)
     return array;
 }
 
+//Вывод массива
 void ArrayPrint(int[] array)
 {
     for (int i = 0; i < array.Length; i++) Console.Write(array[i] + "  ");
